@@ -1,6 +1,7 @@
-From rocker/rstudio:3.6.2
+From rocker/rstudio:3.6.1
 
-RUN apt-get update -y\&& apt-get install -y dpkg-dev zlib1g-dev libssl-dev libffi-dev\
+RUN apt-get update -y\
+&& apt-get install -y dpkg-dev zlib1g-dev libssl-dev libffi-dev\
 && apt-get install -y curl libcurl4-openssl-dev\
 && apt-get install -y git\
 && R -e "install.packages('BiocManager')"\
