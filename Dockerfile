@@ -32,6 +32,3 @@ RUN apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev\
 && R -e "devtools::install_github('cole-trapnell-lab/leidenbase')"\
 && R -e "devtools::install_github('cole-trapnell-lab/monocle3')"\
 && R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/Matrix.utils/Matrix.utils_0.9.7.tar.gz')"
-
-RUN 
-
