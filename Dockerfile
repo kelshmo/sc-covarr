@@ -24,7 +24,9 @@ RUN apt-get install -y git\
 && R -e "install.packages('scRNAseq')"\
 && R -e "install.packages('multtest')"\
 && R -e "install.packages('scater')"\
-&& R -e "install.packages('readxl')"\
+&& R -e "install.packages('readxl')"
+
+RUN apt-get install -y libudunits2-dev\
 && R -e "devtools::install_github('cole-trapnell-lab/leidenbase')"\
 && R -e "devtools::install_github('cole-trapnell-lab/monocle3')"\
 && R -e "devtools::install_url('https://cran.r-project.org/src/contrib/Archive/Matrix.utils/Matrix.utils_0.9.7.tar.gz')"
